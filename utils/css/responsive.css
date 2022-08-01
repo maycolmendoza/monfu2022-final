@@ -1,0 +1,309 @@
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /* CSS */
+    #menu_bars {
+        display: none;
+    }
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+    #menu_bars {
+        display: none;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+    .logos .scroll {
+        display: none;
+    }
+    #myBtns {
+        display: none;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS */
+    .logos .scroll {
+        display: none;
+    }
+    #myBtns {
+        display: none;
+    }
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* CSS */
+    .logos .scroll {
+        display: none;
+    }
+    #myBtns {
+        display: none;
+    }
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 300px) and (max-width: 480px) {
+    /* CSS */
+    .logos .scroll {
+        display: none;
+    }
+    #myBtns {
+        display: none;
+    }
+    /*EVENTO*/
+    .evento1 {
+        height: 50px !important;
+        margin-top: -200px;
+    }
+    .evento-content {
+        margin-top: -50px !important;
+    }
+    #evento {
+        margin-top: 0px !important;
+        height: 1200px;
+    }
+    /*END EVENTO*/
+    /*estadia*/
+    .estadia1 {
+        height: 100px !important;
+        margin-top: -200px;
+    }
+    #estadia {
+        margin-top: 0px !important;
+    }
+    .text-estadia {
+        text-align: right;
+        margin: 0px;
+    }
+    /*fin estadia*/
+    /*organizacion*/
+    .text-organizacion {
+        line-height: 38px !important;
+    }
+    /*fin organizacion*/
+    /*ICONO DEL MENU*/
+    .menu_bars {
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+        width: 30px;
+    }
+    /*FIN DEL ICONO DEL MENU*/
+    /*MENU*/
+    .bg-transparent {
+        background-color: transparent !important;
+    }
+    .navbar {
+        background-color: transparent !important;
+    }
+    .header.header-appear nav.header-light,
+    header.sticky nav.navbar-fixed-top.header-light,
+    header.sticky nav.navbar-scroll-fixed-top.header-light {
+        background-color: transparent !important;
+        background-image: none;
+    }
+    .sticky .header-appear {
+        display: none;
+        background-color: transparent !important;
+        background-image: none;
+    }
+    /*FIN MENU*/
+    /*IMG EVENTO*/
+    .img-evento {
+        max-width: 300px !important;
+        height: 80%;
+    }
+    /*FIN EVENTO IMG*/
+    .logo-montañas {
+        max-width: 300px !important;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 320px) {
+    /* CSS */
+    .logos .scroll {
+        display: none;
+    }
+    #myBtns {
+        display: none;
+    }
+    /*EVENTO*/
+    .evento1 {
+        height: 50px !important;
+        margin-top: -200px;
+    }
+    .evento-content {
+        margin-top: -50px !important;
+    }
+    #evento {
+        margin-top: 0px !important;
+        height: 1200px;
+    }
+    /*END EVENTO*/
+    /*estadia*/
+    .estadia1 {
+        height: 100px !important;
+        margin-top: -200px;
+    }
+    #estadia {
+        margin-top: 0px !important;
+    }
+    .text-estadia {
+        text-align: right;
+        margin: 0px;
+    }
+    /*fin estadia*/
+    /*organizacion*/
+    .text-organizacion {
+        line-height: 38px !important;
+    }
+    /*fin organizacion*/
+    /*ICONO DEL MENU*/
+    .menu_bars {
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+        width: 30px;
+    }
+    /*FIN DEL ICONO DEL MENU*/
+    /*MENU*/
+    .bg-transparent {
+        background-color: transparent !important;
+    }
+    .navbar {
+        background-color: transparent !important;
+    }
+    .header.header-appear nav.header-light,
+    header.sticky nav.navbar-fixed-top.header-light,
+    header.sticky nav.navbar-scroll-fixed-top.header-light {
+        background-color: transparent !important;
+        background-image: none;
+    }
+    .sticky .header-appear {
+        display: none;
+        background-color: transparent !important;
+        background-image: none;
+    }
+    /*FIN MENU*/
+    /*IMG EVENTO*/
+    .img-evento {
+        max-width: 100px !important;
+    }
+    /*FIN EVENTO IMG*/
+    /*IMG FOOTER*/
+    .logo-montañas {
+        max-width: 300px !important;
+    }
+    /*FIN IMG FOOTER*/
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+    /* CSS */
+    .logos .scroll {
+        display: none;
+    }
+    #myBtns {
+        display: none;
+    }
+    /*EVENTO*/
+    .evento1 {
+        height: 50px !important;
+        margin-top: -200px;
+    }
+    .evento-content {
+        margin-top: -50px !important;
+    }
+    #evento {
+        margin-top: 0px !important;
+        height: 1200px;
+    }
+    /*END EVENTO*/
+    /*estadia*/
+    .estadia1 {
+        height: 100px !important;
+        margin-top: -200px;
+    }
+    #estadia {
+        margin-top: 0px !important;
+    }
+    .text-estadia {
+        text-align: right;
+        margin: 0px;
+    }
+    /*fin estadia*/
+    /*organizacion*/
+    .text-organizacion {
+        line-height: 38px !important;
+    }
+    /*fin organizacion*/
+    /*ICONO DEL MENU*/
+    .menu_bars {
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+        width: 30px;
+    }
+    /*FIN DEL ICONO DEL MENU*/
+    /*MENU*/
+    .bg-transparent {
+        background-color: transparent !important;
+    }
+    .navbar {
+        background-color: transparent !important;
+    }
+    .header.header-appear nav.header-light,
+    header.sticky nav.navbar-fixed-top.header-light,
+    header.sticky nav.navbar-scroll-fixed-top.header-light {
+        background-color: transparent !important;
+        background-image: none;
+    }
+    .sticky .header-appear {
+        display: none;
+        background-color: transparent !important;
+        background-image: none;
+    }
+    /*FIN MENU*/
+    /*IMG EVENTO*/
+    .img-evento {
+        max-width: 300px !important;
+        height: 80%;
+    }
+    /*FIN EVENTO IMG*/
+    /*IMG FOOTER*/
+    .logo-montañas {
+        max-width: 300px !important;
+    }
+    /*FIN IMG FOOTER*/
+}
