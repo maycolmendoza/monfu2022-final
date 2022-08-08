@@ -3163,3 +3163,185 @@ img:not([data-attr="marcas"]) {
 img {
     pointer-events: none !important;
 }
+
+
+.weather-arequipa{
+    background: rgba( 255, 255, 255, 0.25 );
+
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+/*secion de imagenes index*/
+.single-boxs {
+    border-radius: 0px;
+    overflow: hidden;
+    background-color: #0067C0;
+}
+
+.single-boxs:hover {
+    background-color: #eee;
+    color: #646363;
+}
+
+.img-areas {
+    overflow: hidden;
+    padding: 15px 0 15px;
+}
+
+.info-areas {
+    margin: 10px;
+}
+
+.info-areas:hover {
+    color: #000;
+}
+
+.info-areas h4 {
+    color: #fff;
+}
+
+.img-areas img {
+    margin: 0 auto;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    max-width: 230px;
+}
+
+.single-boxs:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.team-sliders .owl-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    text-align: center;
+    width: 100%;
+}
+
+.team-sliders button.owl-dot {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin: 0 6px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ece4e4;
+}
+
+.team-sliders .owl-dot.active {
+    background-color: #fff;
+}
+
+.move-animations {
+    position: relative;
+    -webkit-animation: move-animation 2s ease-in-out infinite;
+    animation: move-animation 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes move-animation {
+    0% {
+        top: 3px;
+    }
+
+    50% {
+        top: -3px;
+    }
+
+    100% {
+        top: 3px;
+    }
+}
+
+
+/*seccion de imagenes de estadia*/
+.single-boxsx {
+    border-radius: 0px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.single-boxsx:hover {
+    background-color: #eee;
+    color: #646363;
+}
+
+.img-areasx {
+    overflow: hidden;
+    padding: 15px 0 15px;
+}
+
+.info-areasx {
+    margin: 10px;
+}
+
+.info-areasx:hover {
+    color: #000;
+}
+
+.info-areasx h4 {
+    color: #fff;
+}
+
+.img-areasx img {
+    margin: 0 auto;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    max-width: 230px;
+}
+
+.single-boxsx:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.team-slidersx .owl-dotsx {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    text-align: center;
+    width: 100%;
+}
+
+.team-slidersx button.owl-dotx {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin: 0 6px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ece4e4;
+}
+
+.team-slidersx .owl-dotx.active {
+    background-color: #fff;
+}
+
+.move-animations {
+    position: relative;
+    -webkit-animation: move-animation 2s ease-in-out infinite;
+    animation: move-animation 2s ease-in-out infinite;
+    max-height: 90%;
+    max-width: 90%;
+}
+
+@-webkit-keyframes move-animation {
+    0% {
+        top: 3px;
+    }
+
+    50% {
+        top: -3px;
+    }
+
+    100% {
+        top: 3px;
+    }
+}

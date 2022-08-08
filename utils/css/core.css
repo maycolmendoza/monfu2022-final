@@ -3137,28 +3137,6 @@ header.sticky .header-dark .mobile-toggle:hover span {
 }
 
 
-/* light navigation header maycol */
-
-header nav.navbar {
-    overflow: hidden;
-    width: 100%;
-    height: 90px;
-    object-fit: cover;
-}
-
-header.header-appear nav.header-light,
-header.sticky nav.navbar-fixed-top.header-light,
-header.sticky nav.navbar-scroll-fixed-top.header-light {
-    background-color: none;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-image: url('https://res.cloudinary.com/dicmh7cfa/image/upload/v1657547111/logos%20monfu%202022/svg/Group_1_3_suaox7.svg');
-    color: #5d5d5d !important;
-}
 
 
 /* dark navigation */

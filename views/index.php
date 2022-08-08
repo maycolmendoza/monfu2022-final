@@ -65,7 +65,7 @@
             </div>
         </div>
     </div>
-    <button class="scrollToTopBtn"><img src="https://res.cloudinary.com/dicmh7cfa/image/upload/v1657641542/logos%20monfu%202022/punta-de-flecha-hacia-arriba_ygxwn2.png" width="30px" height="30px" alt=""></button>
+    <button class="scrollToTopBtn"><span><i class="bi bi-chevron-double-up"></i></span></button>
 
     <!-- start header -->
     <header>
@@ -103,101 +103,7 @@
                     </div>
                     <div class="col-md-2 col-xs-5">
 
-                    <!--
-                        <a title="Simposio INAIGEM - Las Montañas Nuestro Futuro" class="logo scroll">
-
-                            <a data-share="device facebook twitter linkedin" data-share-label="Share on" data-share-device="Share using device sharing" title="Compartir con tus amigos">
-                                <img src="https://res.cloudinary.com/dicmh7cfa/image/upload/v1657712765/logos%20monfu%202022/share_1_ymwtsv.png" width="15px" height="15px" alt="" />
-                            </a>
-
-
-
-
-
-                            <script>
-                                //
-                                function Share(element) {
-                                    const canShare = "share" in window.navigator;
-                                    const options = element.dataset.share.split(" ");
-                                    const shareIndex = options.findIndex((option) => {
-                                        return option === "device";
-                                    });
-                                    const shareData = {
-                                        facebook: {
-                                            url: "https://www.facebook.com/share.php?u="
-                                        },
-                                        linkedin: {
-                                            url: "https://www.linkedin.com/shareArticle?mini=true&url"
-                                        },
-                                        twitter: {
-                                            url: "https://www.twitter.com/share?url="
-                                        }
-                                    };
-
-                                    if (shareIndex > -1 && !canShare) {
-                                        options.splice(shareIndex, 1);
-                                    }
-
-                                    if (shareIndex > -1 && canShare) {
-                                        const shareButton = h(
-                                            "button", {
-                                                "aria-label": `${element.dataset.shareDevice}`,
-                                                "data-share-item": ""
-                                            },
-                                            [h("i")]
-                                        );
-                                        shareButton.addEventListener("click", () => {
-                                            navigator
-                                                .share({
-                                                    title: document.title,
-                                                    url: location.href
-                                                })
-                                                .catch(() => {
-                                                    return;
-                                                });
-                                        });
-                                        element.appendChild(shareButton);
-                                    } else {
-                                        options.forEach((option) => {
-                                            const shareLink = h(
-                                                "a", {
-                                                    "aria-label": `${element.dataset.shareLabel} ${option}`,
-                                                    "data-share-item": option,
-                                                    href: shareData[option].url + encodeURIComponent(location.href),
-                                                    rel: "noopener noreferrer",
-                                                    target: "_blank"
-                                                },
-                                                [h("i")]
-                                            );
-                                            element.appendChild(shareLink);
-                                        });
-                                    }
-                                }
-
-                                function h(type, attributes, children = []) {
-                                    const element = document.createElement(type);
-                                    for (let key in attributes) {
-                                        element.setAttribute(key, attributes[key]);
-                                    }
-                                    if (children.length) {
-                                        children.forEach((child) => {
-                                            if (typeof child === "string") {
-                                                element.appendChild(document.createTextNode(child));
-                                            } else {
-                                                element.appendChild(child);
-                                            }
-                                        });
-                                    }
-                                    return element;
-                                }
-
-                                /* Init Share */
-                                const shares = document.querySelectorAll(`[data-share]`);
-                                shares.forEach((element) => {
-                                    Share(element);
-                                });
-                            </script>
-                        </a>--->
+                  
                     </div>
                     <div class="col-md-2 col-xs-5 width-auto sm-width-15 xs-width-20 no-padding">
                         <div class="header-social-icon sm-display-none" aria-hidden="true">
@@ -244,24 +150,24 @@
                             </div>
                             <ul class="push_nav centered">
                                 <li class="clearfix">
-                                    <a href="#home" class="scroll"><span>01.</span>Inicio</a>
+                                    <a href="#home" class="scroll">Inicio</a>
 
                                 </li>
                                 <li class="clearfix">
-                                    <a href="#evento" class="scroll"> <span>02.</span>Evento</a>
+                                    <a href="#evento" class="scroll"> Evento</a>
 
                                 </li>
                                 <li class="clearfix">
-                                    <a href="#programa" class="scroll"> <span>03.</span>Programa</a>
+                                    <a href="#programa" class="scroll"> Programa</a>
 
                                 </li>
                                 <li class="clearfix">
-                                    <a href="#social" class="scroll"> <span>04.</span>Ponentes</a>
+                                    <a href="#social" class="scroll"> Ponentes</a>
 
                                 </li>
 
                                 <li class="clearfix">
-                                    <a href="#seo" class="scroll"> <span>05.</span>Estadia</a>
+                                    <a href="#seo" class="scroll"> Estadia</a>
 
                                 </li>
 
@@ -291,9 +197,10 @@
                             </h3>
                             <p class="text-blanco font-weight-300" id="dias">
                             </p>
-                            <!--
-                            <a data-fancybox="group-two" href="images/single-portfolio1.jpg"
-                                class="btn btn-transparent-white btn-large margin-30px-top">Registrarme</a>-->
+                          
+                      
+
+                              
                         </div>
                     </div>
                 </div>
@@ -309,16 +216,7 @@
     </section>
 
 
-    <div style="
-    background-image: url('https://res.cloudinary.com/dicmh7cfa/image/upload/v1655658314/logos%20monfu%202022/svg/2_Monta%C3%B1a_1_vcwfdd.svg');
-    background-repeat: inherit;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    margin-top: -200px;
-    z-index: 1;
-    position: relative;" class="evento1">
-    </div>
+    <div  class="evento1"></div>
     <!--Single portfolio item two-->
     <section class="single-items center-block parallax" id="evento" style="
     background-color: #EDEFF2;margin-top: -100px;">
@@ -441,17 +339,7 @@
 
 
     <!--ESTADIA-->
-    <div style="
-    background-image: url('https://res.cloudinary.com/dicmh7cfa/image/upload/v1658037163/Group_8_bsfl0f.svg');
-    background-repeat: inherit;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-top: -100px;
-    z-index: 1;
-    position: relative;
-    background-color: #EDEFF2;
-    " class="estadia1">
+    <div class="estadia1">
     </div>
     <!--Single portfolio item six-->
     <section class="single-items center-block parallax" id="estadia">
@@ -504,7 +392,7 @@
         </div>
     </section>
     <!--Single portfolio item seven-->
-    <section class="single-items center-block item-seven parallax" style="background-color: #ffffff;margin-top: -50px;">
+    <section class="single-items center-block item-seven parallax organizadores" id="organizadores">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -576,7 +464,7 @@
     </section>
 
     <!--footer Start 0067c0-->
-    <footer class="text-center bg-extra-dark-gray padding-30px-tb" style="background-image: url('https://res.cloudinary.com/dicmh7cfa/image/upload/v1658075434/Group_9_2_kwa6xs.png');">
+    <footer class="text-center bg-extra-dark-gray p-4" >
         <div class="footer-widget-area">
             <div class="container">
 
@@ -630,10 +518,10 @@
     </footer>
     <div class="container">
         <div class="row">
-            <div class="text-center">
-                <img src="https://res.cloudinary.com/dicmh7cfa/image/upload/v1656444923/logos%20monfu%202022/lg_black_gpwdnw.png" alt="" style="width: 50px;">
-                <p class="margin-10px-bottom margin-0px-top" style="color: #575756;font-size: 9px;">Diseñado y
-                    programado por DIGC INAIGEM - 2022</p>
+
+            <div class="col-lg-12 text-center">
+                <p class="" style="color: #575756;font-size: 9px;">Diseñado y
+                    programado por DIGC - <img src="https://res.cloudinary.com/dicmh7cfa/image/upload/v1656444923/logos%20monfu%202022/lg_black_gpwdnw.png" alt="" style="width: 50px;"> 2022  </p>
             </div>
         </div>
     </div>

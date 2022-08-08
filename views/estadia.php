@@ -1,9 +1,8 @@
-<!--  AREQUIPA-->
 
-<!-- Arequipa esta ubicada al suroeste del Peru a una altura de 2325 m.s.n.m.Debido a su ubicacion el clima es seco en invierno, oto√±o y primavera, apodada como "Ciudad de eterno cielo azul" porque presenta temperaturas entre 25¬∫C a 10¬∫C.
-Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√±ones, nevados, una increible gastronom√≠a y construcciones con un legado hist√≥rico, religioso o anscentral.-->
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="<?php  $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+    $acceptLang = ['en', 'uk', 'es']; 
+    $lang = in_array($lang, $acceptLang) ? $lang : 'es';?>">  
 
 <head>
     <meta charset="utf-8">
@@ -132,9 +131,9 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
     </script>
 
     <!-- start header -->
-    <header>
+    <header >
         <!-- start navigation -->
-        <nav class="bg-transparent nav-white-text navbar navbar-default bootsnav navbar-fixed-top nav-white header-light nav_line">
+        <nav  class="bg-transparent nav-white-text navbar navbar-default bootsnav navbar-fixed-top nav-white header-light nav_line">
             <div class="container nav-header-container">
                 <div class="row">
                     <div class="col-md-2 col-xs-5">
@@ -146,21 +145,23 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
                     <div class="col-md-7 col-xs-2 width-auto pull-right accordion-menu xs-no-padding-right hidden-sm hidden-xs">
                         <div class="navbar-collapse collapse pull-right" id="navbar-collapse-toggle-1">
                             <ul id="accordion" class="nav navbar-nav navbar-left no-margin alt-font text-normal" data-in="fadeIn" data-out="fadeOut">
+                            
                                 <li class="active">
-                                    <a href="#home" class="scroll">Inicio</a>
-                                </li>
-                                <li>
-                                    <a href="#evento" class="scroll">Evento</a>
-                                </li>
-                                <li>
-                                    <a href="#programa" class="scroll">Programa</a>
-                                </li>
-                                <li>
-                                    <a href="#ponente" class="scroll">Ponente</a>
-                                </li>
-                                <li>
                                     <a href="#estadia" class="scroll">Estad√≠a</a>
                                 </li>
+                                <li>
+                                    <a href="#info" class="scroll">Informaci√≥n</a>
+                                </li>
+                                <li>
+                                    <a href="#gastronomia" class="scroll">Gastronom√≠a</a>
+                                </li>
+                                <li>
+                                    <a href="#atractivos" class="scroll">Atractivos</a>
+                                </li>
+                                <li>
+                                    <a href="#hoteles" class="scroll">Hoteles</a>
+                                </li>
+                              
 
                             </ul>
                         </div>
@@ -168,9 +169,68 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
                     <div class="col-md-2 col-xs-5">
                         <a title="Logo" class="logo scroll">
 
-                            <button id="myBtns" title="Compartir con tus amigos">
-                                <img src="https://res.cloudinary.com/dicmh7cfa/image/upload/v1657712765/logos%20monfu%202022/share_1_ymwtsv.png" width="15px" height="15px" alt="" />
-                            </button>
+                        <button class="btn-shared" id="webshareapi"><i data-feather="share"></i><i class="fa-solid fa-share"></i></button>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+
+<style>
+  .btn-shared {
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    line-height: 1;
+
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 2rem;
+    
+    opacity: 1;
+    background: rgba( 255, 255, 255, 0.1 );
+backdrop-filter: blur( 3px );
+-webkit-backdrop-filter: blur( 3px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+
+  .share {
+    list-style: none;
+    margin: 0 auto 2rem;
+  }
+
+  .share button {
+    float: left;
+    display: block;
+    height: 64px;
+    width: 64px;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 0;
+    color: #000;
+    cursor: pointer;
+    background: #fff;
+    transition: all 150ms ease-in-out;
+    border: 2px solid #000;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
@@ -224,28 +284,25 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
                             </div>
                             <ul class="push_nav centered">
                                 <li class="clearfix">
-                                    <a href="#home" class="scroll"><span>01.</span>Inicio</a>
+                                <a href="#estadia" class="scroll">Estad√≠a</a>
 
                                 </li>
                                 <li class="clearfix">
-                                    <a href="#evento" class="scroll"> <span>02.</span>Evento</a>
+                                <a href="#info" class="scroll">Informaci√≥n</a>
 
                                 </li>
                                 <li class="clearfix">
-                                    <a href="#programa" class="scroll"> <span>03.</span>Programa</a>
+                                <a href="#gastronomia" class="scroll">Gastronom√≠a</a>
 
                                 </li>
                                 <li class="clearfix">
-                                    <a href="#social" class="scroll"> <span>04.</span>Ponentes</a>
+                                <a href="#atractivos" class="scroll">Atractivos</a>
 
                                 </li>
 
                                 <li class="clearfix">
-                                    <a href="#seo" class="scroll"> <span>05.</span>Estadia</a>
-
+                                <a href="#hoteles" class="scroll">Hoteles</a>
                                 </li>
-
-
                             </ul>
 
                             <p class="text-blanco push-bottom text-small">Dise√±ado y programado por DIGC INAIGEM - 2022
@@ -258,15 +315,16 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
     </header>
     <!-- end header -->
     <!--Single portfolio item one-->
-    <section class="single-items center-block parallax no-margin aleatoriomaycol" id="home" data-overlay-dark="6" style="height: 900px;">
+    <section class="single-items center-block parallax no-margin aleatoriomaycol" id="estadia" data-overlay-dark="6" style="height: 900px;">
         <script>
             const possibleVideos = [
                 "https://res.cloudinary.com/dicmh7cfa/image/upload/v1658336416/logos%20monfu%202022/sidebar/Group_2_1_dwmyym.png",
+                "https://res.cloudinary.com/dicmh7cfa/image/upload/v1659736501/logos%20monfu%202022/arequipa/Group_1_leossk.png",
 
             ];
             const randomVideo =
                 possibleVideos[Math.floor(Math.random() * possibleVideos.length)];
-            document.getElementById("home").style.backgroundImage = "url('" + randomVideo + "')";
+            document.getElementById("estadia").style.backgroundImage = "url('" + randomVideo + "')";
         </script>
         <div style=" z-index: 1;
         position: relative;margin-top: -300px;">
@@ -279,15 +337,6 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
                             </h3>
                             <p class="text-blanco font-weight-300" id="dias">
                             </p>
-
-
-
-
-
-
-
-
-
 
                             <div class="container-arequipa">
                                 <!-- partial:index.partial.html -->
@@ -321,248 +370,13 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
                                     <div class="text">Arequipa</div>
                                 </div>
                             </div>
-                            <style>
-                                .container-arequipa {
-                                    height: 25vh;
-
-                                    overflow: hidden;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    perspective: 500px;
-                                }
-
-                                .uix {
-                                    will-change: transform;
-                                }
-
-                                #ui {
-                                    transform-style: preserve-3d;
-                                }
-
-                                #ui .text {
-                                    position: absolute;
-                                    font-size: 15rem;
-                                    color: #fff;
-                                    line-height: 15rem;
-                                    font-family: "Anton", sans-serif;
-                                    padding: 20px 0;
-                                    mix-blend-mode: screen;
-                                    transform-style: preserve-3d;
-                                }
-
-                                #ui .text:nth-child(1) {
-                                    -webkit-clip-path: polygon(-30% 0, -20% 0, 20% 100%, 0% 100%);
-                                    clip-path: polygon(-30% 0, -20% 0, 20% 100%, 0% 100%);
-                                    -webkit-animation: wave 2000ms -10000ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -10000ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(2) {
-                                    -webkit-clip-path: polygon(-25% 0, -15% 0, 25% 100%, 5% 100%);
-                                    clip-path: polygon(-25% 0, -15% 0, 25% 100%, 5% 100%);
-                                    -webkit-animation: wave 2000ms -9800ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -9800ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(3) {
-                                    -webkit-clip-path: polygon(-20% 0, -10% 0, 30% 100%, 10% 100%);
-                                    clip-path: polygon(-20% 0, -10% 0, 30% 100%, 10% 100%);
-                                    -webkit-animation: wave 2000ms -9600ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -9600ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(4) {
-                                    -webkit-clip-path: polygon(-15% 0, -5% 0, 35% 100%, 15% 100%);
-                                    clip-path: polygon(-15% 0, -5% 0, 35% 100%, 15% 100%);
-                                    -webkit-animation: wave 2000ms -9400ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -9400ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(5) {
-                                    -webkit-clip-path: polygon(-10% 0, 0% 0, 40% 100%, 20% 100%);
-                                    clip-path: polygon(-10% 0, 0% 0, 40% 100%, 20% 100%);
-                                    -webkit-animation: wave 2000ms -9200ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -9200ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(6) {
-                                    -webkit-clip-path: polygon(-5% 0, 5% 0, 45% 100%, 25% 100%);
-                                    clip-path: polygon(-5% 0, 5% 0, 45% 100%, 25% 100%);
-                                    -webkit-animation: wave 2000ms -9000ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -9000ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(7) {
-                                    -webkit-clip-path: polygon(0% 0, 10% 0, 50% 100%, 30% 100%);
-                                    clip-path: polygon(0% 0, 10% 0, 50% 100%, 30% 100%);
-                                    -webkit-animation: wave 2000ms -8800ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -8800ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(8) {
-                                    -webkit-clip-path: polygon(5% 0, 15% 0, 55% 100%, 35% 100%);
-                                    clip-path: polygon(5% 0, 15% 0, 55% 100%, 35% 100%);
-                                    -webkit-animation: wave 2000ms -8600ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -8600ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(9) {
-                                    -webkit-clip-path: polygon(10% 0, 20% 0, 60% 100%, 40% 100%);
-                                    clip-path: polygon(10% 0, 20% 0, 60% 100%, 40% 100%);
-                                    -webkit-animation: wave 2000ms -8400ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -8400ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(10) {
-                                    -webkit-clip-path: polygon(15% 0, 25% 0, 65% 100%, 45% 100%);
-                                    clip-path: polygon(15% 0, 25% 0, 65% 100%, 45% 100%);
-                                    -webkit-animation: wave 2000ms -8200ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -8200ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(11) {
-                                    -webkit-clip-path: polygon(20% 0, 30% 0, 70% 100%, 50% 100%);
-                                    clip-path: polygon(20% 0, 30% 0, 70% 100%, 50% 100%);
-                                    -webkit-animation: wave 2000ms -8000ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -8000ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(12) {
-                                    -webkit-clip-path: polygon(25% 0, 35% 0, 75% 100%, 55% 100%);
-                                    clip-path: polygon(25% 0, 35% 0, 75% 100%, 55% 100%);
-                                    -webkit-animation: wave 2000ms -7800ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -7800ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(13) {
-                                    -webkit-clip-path: polygon(30% 0, 40% 0, 80% 100%, 60% 100%);
-                                    clip-path: polygon(30% 0, 40% 0, 80% 100%, 60% 100%);
-                                    -webkit-animation: wave 2000ms -7600ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -7600ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(14) {
-                                    -webkit-clip-path: polygon(35% 0, 45% 0, 85% 100%, 65% 100%);
-                                    clip-path: polygon(35% 0, 45% 0, 85% 100%, 65% 100%);
-                                    -webkit-animation: wave 2000ms -7400ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -7400ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(15) {
-                                    -webkit-clip-path: polygon(40% 0, 50% 0, 90% 100%, 70% 100%);
-                                    clip-path: polygon(40% 0, 50% 0, 90% 100%, 70% 100%);
-                                    -webkit-animation: wave 2000ms -7200ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -7200ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(16) {
-                                    -webkit-clip-path: polygon(45% 0, 55% 0, 95% 100%, 75% 100%);
-                                    clip-path: polygon(45% 0, 55% 0, 95% 100%, 75% 100%);
-                                    -webkit-animation: wave 2000ms -7000ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -7000ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(17) {
-                                    -webkit-clip-path: polygon(50% 0, 60% 0, 100% 100%, 80% 100%);
-                                    clip-path: polygon(50% 0, 60% 0, 100% 100%, 80% 100%);
-                                    -webkit-animation: wave 2000ms -6800ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -6800ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(18) {
-                                    -webkit-clip-path: polygon(55% 0, 65% 0, 105% 100%, 85% 100%);
-                                    clip-path: polygon(55% 0, 65% 0, 105% 100%, 85% 100%);
-                                    -webkit-animation: wave 2000ms -6600ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -6600ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(19) {
-                                    -webkit-clip-path: polygon(60% 0, 70% 0, 110% 100%, 90% 100%);
-                                    clip-path: polygon(60% 0, 70% 0, 110% 100%, 90% 100%);
-                                    -webkit-animation: wave 2000ms -6400ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -6400ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(20) {
-                                    -webkit-clip-path: polygon(65% 0, 75% 0, 115% 100%, 95% 100%);
-                                    clip-path: polygon(65% 0, 75% 0, 115% 100%, 95% 100%);
-                                    -webkit-animation: wave 2000ms -6200ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -6200ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(21) {
-                                    -webkit-clip-path: polygon(70% 0, 80% 0, 120% 100%, 100% 100%);
-                                    clip-path: polygon(70% 0, 80% 0, 120% 100%, 100% 100%);
-                                    -webkit-animation: wave 2000ms -6000ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -6000ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(22) {
-                                    -webkit-clip-path: polygon(75% 0, 85% 0, 125% 100%, 105% 100%);
-                                    clip-path: polygon(75% 0, 85% 0, 125% 100%, 105% 100%);
-                                    -webkit-animation: wave 2000ms -5800ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -5800ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(23) {
-                                    -webkit-clip-path: polygon(80% 0, 90% 0, 130% 100%, 110% 100%);
-                                    clip-path: polygon(80% 0, 90% 0, 130% 100%, 110% 100%);
-                                    -webkit-animation: wave 2000ms -5600ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -5600ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(24) {
-                                    -webkit-clip-path: polygon(85% 0, 95% 0, 135% 100%, 115% 100%);
-                                    clip-path: polygon(85% 0, 95% 0, 135% 100%, 115% 100%);
-                                    -webkit-animation: wave 2000ms -5400ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -5400ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(25) {
-                                    -webkit-clip-path: polygon(90% 0, 100% 0, 140% 100%, 120% 100%);
-                                    clip-path: polygon(90% 0, 100% 0, 140% 100%, 120% 100%);
-                                    -webkit-animation: wave 2000ms -5200ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -5200ms ease-in-out infinite alternate;
-                                }
-
-                                #ui .text:nth-child(26) {
-                                    -webkit-clip-path: polygon(95% 0, 105% 0, 145% 100%, 125% 100%);
-                                    clip-path: polygon(95% 0, 105% 0, 145% 100%, 125% 100%);
-                                    -webkit-animation: wave 2000ms -5000ms ease-in-out infinite alternate;
-                                    animation: wave 2000ms -5000ms ease-in-out infinite alternate;
-                                }
-
-                                @-webkit-keyframes wave {
-                                    0% {
-                                        transform: translate(-50%, -50%) scale(0.9) rotateX(20deg) rotateY(20deg) rotateZ(0deg);
-                                        color: #1c3f91;
-                                    }
-
-                                    100% {
-                                        transform: translate(-50%, -50%) scale(1.1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-                                        color: #32e6ff;
-                                    }
-                                }
-
-                                @keyframes wave {
-                                    0% {
-                                        transform: translate(-50%, -50%) scale(0.9) rotateX(20deg) rotateY(20deg) rotateZ(0deg);
-                                        color: #001e64;
-                                    }
-
-                                    100% {
-                                        transform: translate(-50%, -50%) scale(1.1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-                                        color: #32e6ff;
-                                    }
-                                }
-                            </style>
+                       
 
 
 
                             <br>
                             <p id="section03" class="demo-scroll ">
-                                <a href="#evento" class="scroll"><span></span></a>
+                                <a href="#info" class="scroll"><span></span></a>
                             </p>
                             <style>
                                 .demo-scroll a {
@@ -674,7 +488,7 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
     ">
     </div>
     <!--Single portfolio item two-->
-    <section class="single-items center-block parallax" id="evento" style="
+    <section class="single-items center-block parallax" id="info" style="
     background-color: #E0E0E0;margin-top: -100px;">
         <div class="container evento-content" style="margin-top: -130px;">
 
@@ -706,11 +520,56 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
                     </div>
                 </div>
                 <div class="col-sm-2"></div>
-                <div class="text-center col-sm-12">
-                    <a class="wow fadeInUp" data-wow-duration=".5s" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NGxkbnJmNGYzMTA2a3A1aGw2OXVibmFqZHQgZGlnY0BpbmFpZ2VtLmdvYi5wZQ&tmsrc=digc%40inaigem.gob.pe" target="_blank"><button class="py-6 btn btn-lg btn-primary">SAVE THE DAY <i class="fa-solid fa-calendar"></i></button></a>
+
+
+
+                <div class="text-center  justify-content-center col-sm-3">
+                </div>
+                <div class="text-center  justify-content-center col-sm-6">
+                    <div class="wow fadeInUp" data-wow-duration=".5s">
+
+                    <div class="card text-center weather-arequipa" >
+
+
+                    <?php include_once("./models/weather.php") ?>
+
+                    <div class="card-header">
+
+                 <?php foreach($clima as $country) {
+                      $iconoweather= $country['icon'].".png";
+                      $description=$country['description'];
+$url_img=  'http://openweathermap.org/img/w/'.$iconoweather.'' ;
+                      ?>
+                      <div class="card-image ">
+                      <?php  echo  $data['name'].",".$sys['country'];  
+ ?>   <img class="iconx" src="<?php echo $url_img?>" class="img-fluid" alt="">
+                      </div>
+                      <?php
+ } 
+ ?>
+ <style>
+     .iconx{
+         padding: 4px !important;
+         width: 30px !important;
+         height: 30px !important;
+     }
+ </style>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><?php echo round($data['main']['temp'] - 273.15 )." ¬∞C"?></h5>
+  </div>
+  <div class="card-footer text-muted">
+  <?php  echo  $data['name']."&nbsp esta"?> <?php 
+  $date = new \DateTime();
+  $dia= $date->format("D");
+  foreach($clima as $country) echo $country['description'] ."&nbsp hoy &nbsp".$dia?>
+  </div>
+</div>
                 </div>
                 <br><br><br>
             </div>
+            <div class="text-center  justify-content-center col-sm-3">
+                </div>
         </div>
         <div class="hidden">
             <a data-fancybox="group-two" data-thumb="images/gallery-thumb1.jpg" href="images/gallery-thumb1.jpg"></a>
@@ -727,24 +586,11 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
 
     <!--gastronomia-->
 
-    <div style="
-    background-image: url('https://res.cloudinary.com/dicmh7cfa/image/upload/v1658083153/ROCOTO_FONDO_EST_kzkwtz.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-   
-    position: relative;
-    z-index: 1;
-    background-color: #E0E0E0;
-   
-    
-    ">
-    </div>
+    <div  class="gastronomia"></div>
 
 
     <!--Single portfolio item six-->
-    <section class="single-items center-block parallax" id="estadia" style="background-color: #EDEFF2;">
+    <section class="single-items center-block parallax" id="gastronomia" style="background-color: #EDEFF2;">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-md-offset-7 col-sm-8 col-sm-offset-4 col-xs-11 col-xs-offset-1">
@@ -788,7 +634,7 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
 
                             </h3>
                             </p>
-                            <a href="#" class="texto-blanco btn btn-primary btn-estadia">Conoce M√°s</a>
+                            <a  data-fancybox="comidastipicas" href="https://res.cloudinary.com/dicmh7cfa/image/upload/v1659737485/logos%20monfu%202022/arequipa/Group_3_ppxito.png" class="texto-blanco btn btn-primary btn-estadia">Conoce M√°s</a>
                         </div>
                     </div>
 
@@ -797,15 +643,12 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
         </div>
         </div>
         <div class="hidden">
-            <a data-fancybox="group-six" data-thumb="images/gallery-thumb1.jpg" href="images/gallery-thumb1.jpg"></a>
-            <a data-fancybox="group-six" data-thumb="images/gallery-thumb2.jpg" href="images/gallery-thumb2.jpg"></a>
-            <a data-fancybox="group-six" data-thumb="images/gallery-thumb3.jpg" href="images/gallery-thumb3.jpg"></a>
-            <a data-fancybox="group-six" data-thumb="images/gallery-thumb4.jpg" href="images/gallery-thumb4.jpg"></a>
-            <a data-fancybox="group-six" data-thumb="images/gallery-thumb5.jpg" href="images/gallery-thumb5.jpg"></a>
+            <a data-fancybox="comidastipicas" data-thumb="https://res.cloudinary.com/dicmh7cfa/image/upload/v1659737418/logos%20monfu%202022/arequipa/Group_6_hygihl.png" href="https://res.cloudinary.com/dicmh7cfa/image/upload/v1659737418/logos%20monfu%202022/arequipa/Group_6_hygihl.png"></a>
+            <a data-fancybox="comidastipicas" data-thumb="https://res.cloudinary.com/dicmh7cfa/image/upload/v1659737437/logos%20monfu%202022/arequipa/Group_5_z9rwrh.png" href="https://res.cloudinary.com/dicmh7cfa/image/upload/v1659737437/logos%20monfu%202022/arequipa/Group_5_z9rwrh.png"></a>
+            <a data-fancybox="comidastipicas" data-thumb="https://res.cloudinary.com/dicmh7cfa/image/upload/v1659737441/logos%20monfu%202022/arequipa/Group_4_zzaygr.png" href="https://res.cloudinary.com/dicmh7cfa/image/upload/v1659737441/logos%20monfu%202022/arequipa/Group_4_zzaygr.png"></a>
+         
         </div>
     </section>
-
-
 
 
 
@@ -827,7 +670,7 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
     ">
     </div>
     <!--Single portfolio item two-->
-    <section class="single-items center-block parallax" id="evento" style="
+    <section class="single-items center-block parallax" id="atractivos" style="
     background-color: #E0E0E0;">
         <div class="container">
             <div class="row">
@@ -845,35 +688,37 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="team-sliders owl-carousel wow fadeInRight">
-                                    <div class="text-center single-boxs">
-                                        <div class="img-areas">
-                                            <img alt="" class="img-fluid move-animations" src="https://i.postimg.cc/65VQDfjs/1.png" />
+                                <div class="team-slidersx owl-carousel wow fadeInRight">
+                                    <div class="text-center single-boxsx">
+                                        <div class="img-areasx">
+                                            <img alt="" class="img-fluid move-animations" src="https://res.cloudinary.com/dicmh7cfa/image/upload/v1659738735/logos%20monfu%202022/arequipa/colca-g906feefe5_1920_2_zz0qvk.png" />
                                         </div>
-                                        <div class="info-areas">
-                                            <h4>Person's Name</h4>
+                                        <div class="info-areasx">
+                                            <h4>
+                                            Ca√±√≥n del Colcal
+                                            </h4>
                                             <a class="btn btn-transparent-white btn-large margin-6px-top" data-fancybox="group-six" href="images/single-portfolio6.jpg">View
                                                 More</a>
                                         </div>
 
 
                                     </div>
-                                    <div class="text-center single-boxs">
-                                        <div class="img-areas">
-                                            <img alt="" class="img-fluid move-animations" src="https://i.postimg.cc/vmCM14qL/2.png" />
+                                    <div class="text-center single-boxsx">
+                                        <div class="img-areasx">
+                                            <img alt="" class="img-fluid move-animations" src="https://res.cloudinary.com/dicmh7cfa/image/upload/v1659737870/logos%20monfu%202022/arequipa/colca-g906feefe5_1920_dahhwd.jpg" />
                                         </div>
-                                        <div class="info-areas">
-                                            <h4>Person's Name</h4>
+                                        <div class="info-areasx">
+                                            <h4> Monasterio de Santa Catalina</h4>
                                             <a class="btn btn-transparent-white btn-large margin-6px-top" data-fancybox="group-six" href="images/single-portfolio6.jpg">View
                                                 More</a>
                                         </div>
 
                                     </div>
-                                    <div class="text-center single-boxs">
-                                        <div class="img-areas">
+                                    <div class="text-center single-boxsx">
+                                        <div class="img-areasx">
                                             <img alt="" class="img-fluid move-animations" src="https://i.postimg.cc/TYTxWM9S/3.png" />
                                         </div>
-                                        <div class="info-areas">
+                                        <div class="info-areasx">
                                             <h4>Person's Name</h4>
                                             <a class="btn btn-transparent-white btn-large margin-6px-top" data-fancybox="group-six" href="images/single-portfolio6.jpg">View
                                                 More</a>
@@ -881,13 +726,13 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
 
 
                                     </div>
-                                    <div class="text-center single-boxs">
-                                        <div class="img-areas">
+                                    <div class="text-center single-boxsx">
+                                        <div class="img-areasx">
 
                                             <a class="btn btn-transparent-white btn-large margin-6px-top" data-fancybox="group-six" href="images/single-portfolio6.jpg">View
                                                 More</a>
                                         </div>
-                                        <div class="info-areas">
+                                        <div class="info-areasx">
 
                                         </div>
                                     </div>
@@ -898,97 +743,14 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
 
                     </div>
 
-                    <style>
-                        .single-boxs {
-                            border-radius: 0px;
-                            overflow: hidden;
-                            background-color: #0067C0;
-                        }
-
-                        .single-boxs:hover {
-                            background-color: #eee;
-                            color: #646363;
-                        }
-
-                        .img-areas {
-                            overflow: hidden;
-                            padding: 15px 0 15px;
-                        }
-
-                        .info-areas {
-                            margin: 10px;
-                        }
-
-                        .info-areas:hover {
-                            color: #000;
-                        }
-
-                        .info-areas h4 {
-                            color: #fff;
-                        }
-
-                        .img-areas img {
-                            margin: 0 auto;
-                            -webkit-transition: all 0.5s ease;
-                            transition: all 0.5s ease;
-                            max-width: 230px;
-                        }
-
-                        .single-boxs:hover img {
-                            -webkit-transform: scale(1.1);
-                            transform: scale(1.1);
-                        }
-
-                        .team-sliders .owl-dots {
-                            position: absolute;
-                            left: 0;
-                            right: 0;
-                            bottom: -40px;
-                            text-align: center;
-                            width: 100%;
-                        }
-
-                        .team-sliders button.owl-dot {
-                            width: 16px;
-                            height: 16px;
-                            display: inline-block;
-                            margin: 0 6px;
-                            text-align: center;
-                            border-radius: 50%;
-                            background-color: #ece4e4;
-                        }
-
-                        .team-sliders .owl-dot.active {
-                            background-color: #fff;
-                        }
-
-                        .move-animations {
-                            position: relative;
-                            -webkit-animation: move-animation 2s ease-in-out infinite;
-                            animation: move-animation 2s ease-in-out infinite;
-                        }
-
-                        @-webkit-keyframes move-animation {
-                            0% {
-                                top: 3px;
-                            }
-
-                            50% {
-                                top: -3px;
-                            }
-
-                            100% {
-                                top: 3px;
-                            }
-                        }
-                    </style>
+            
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
                     </script>
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
                     </script>
                     <script>
-                        $(".team-sliders").owlCarousel({
+                        $(".team-slidersx").owlCarousel({
                             loop: true,
                             nav: false,
                             autoplay: true,
@@ -1063,7 +825,7 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
     </div>
 
     <!--Single portfolio item seven-->
-    <section class="single-items center-block item-seven parallax" style="background-color: #EDEFF2;">
+    <section class="single-items center-block item-seven parallax" id="hoteles" style="background-color: #EDEFF2;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -1273,6 +1035,7 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
     <script src="./utils/js/jquery.fancybox.min.js"></script>
     <!-- wow -->
     <script src="./utils/js/wow.js"></script>
+    <script src="./utils/js/shared.js"></script>
     <!-- parallax -->
     <script src="./utils/js/parallaxie.min.js"></script>
     <!-- equal hieght -->
@@ -1314,3 +1077,244 @@ Arequipa ofrece una gran variedad diversidad cultural y natural de profundos ca√
 </body>
 
 </html>
+
+<style>
+
+    
+/*arequipa*/
+
+.container-arequipa {
+    height: 25vh;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+}
+
+.uix {
+    will-change: transform;
+}
+
+#ui {
+    transform-style: preserve-3d;
+}
+
+#ui .text {
+    position: absolute;
+    font-size: clamp(15rem,8rem,5rem);
+    color: #fff;
+    line-height: 15rem;
+    font-family: "Anton", sans-serif;
+    padding: 20px 0;
+    mix-blend-mode: screen;
+    transform-style: preserve-3d;
+}
+
+#ui .text:nth-child(1) {
+    -webkit-clip-path: polygon(-30% 0, -20% 0, 20% 100%, 0% 100%);
+    clip-path: polygon(-30% 0, -20% 0, 20% 100%, 0% 100%);
+    -webkit-animation: wave 2000ms -10000ms ease-in-out infinite alternate;
+    animation: wave 2000ms -10000ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(2) {
+    -webkit-clip-path: polygon(-25% 0, -15% 0, 25% 100%, 5% 100%);
+    clip-path: polygon(-25% 0, -15% 0, 25% 100%, 5% 100%);
+    -webkit-animation: wave 2000ms -9800ms ease-in-out infinite alternate;
+    animation: wave 2000ms -9800ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(3) {
+    -webkit-clip-path: polygon(-20% 0, -10% 0, 30% 100%, 10% 100%);
+    clip-path: polygon(-20% 0, -10% 0, 30% 100%, 10% 100%);
+    -webkit-animation: wave 2000ms -9600ms ease-in-out infinite alternate;
+    animation: wave 2000ms -9600ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(4) {
+    -webkit-clip-path: polygon(-15% 0, -5% 0, 35% 100%, 15% 100%);
+    clip-path: polygon(-15% 0, -5% 0, 35% 100%, 15% 100%);
+    -webkit-animation: wave 2000ms -9400ms ease-in-out infinite alternate;
+    animation: wave 2000ms -9400ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(5) {
+    -webkit-clip-path: polygon(-10% 0, 0% 0, 40% 100%, 20% 100%);
+    clip-path: polygon(-10% 0, 0% 0, 40% 100%, 20% 100%);
+    -webkit-animation: wave 2000ms -9200ms ease-in-out infinite alternate;
+    animation: wave 2000ms -9200ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(6) {
+    -webkit-clip-path: polygon(-5% 0, 5% 0, 45% 100%, 25% 100%);
+    clip-path: polygon(-5% 0, 5% 0, 45% 100%, 25% 100%);
+    -webkit-animation: wave 2000ms -9000ms ease-in-out infinite alternate;
+    animation: wave 2000ms -9000ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(7) {
+    -webkit-clip-path: polygon(0% 0, 10% 0, 50% 100%, 30% 100%);
+    clip-path: polygon(0% 0, 10% 0, 50% 100%, 30% 100%);
+    -webkit-animation: wave 2000ms -8800ms ease-in-out infinite alternate;
+    animation: wave 2000ms -8800ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(8) {
+    -webkit-clip-path: polygon(5% 0, 15% 0, 55% 100%, 35% 100%);
+    clip-path: polygon(5% 0, 15% 0, 55% 100%, 35% 100%);
+    -webkit-animation: wave 2000ms -8600ms ease-in-out infinite alternate;
+    animation: wave 2000ms -8600ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(9) {
+    -webkit-clip-path: polygon(10% 0, 20% 0, 60% 100%, 40% 100%);
+    clip-path: polygon(10% 0, 20% 0, 60% 100%, 40% 100%);
+    -webkit-animation: wave 2000ms -8400ms ease-in-out infinite alternate;
+    animation: wave 2000ms -8400ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(10) {
+    -webkit-clip-path: polygon(15% 0, 25% 0, 65% 100%, 45% 100%);
+    clip-path: polygon(15% 0, 25% 0, 65% 100%, 45% 100%);
+    -webkit-animation: wave 2000ms -8200ms ease-in-out infinite alternate;
+    animation: wave 2000ms -8200ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(11) {
+    -webkit-clip-path: polygon(20% 0, 30% 0, 70% 100%, 50% 100%);
+    clip-path: polygon(20% 0, 30% 0, 70% 100%, 50% 100%);
+    -webkit-animation: wave 2000ms -8000ms ease-in-out infinite alternate;
+    animation: wave 2000ms -8000ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(12) {
+    -webkit-clip-path: polygon(25% 0, 35% 0, 75% 100%, 55% 100%);
+    clip-path: polygon(25% 0, 35% 0, 75% 100%, 55% 100%);
+    -webkit-animation: wave 2000ms -7800ms ease-in-out infinite alternate;
+    animation: wave 2000ms -7800ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(13) {
+    -webkit-clip-path: polygon(30% 0, 40% 0, 80% 100%, 60% 100%);
+    clip-path: polygon(30% 0, 40% 0, 80% 100%, 60% 100%);
+    -webkit-animation: wave 2000ms -7600ms ease-in-out infinite alternate;
+    animation: wave 2000ms -7600ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(14) {
+    -webkit-clip-path: polygon(35% 0, 45% 0, 85% 100%, 65% 100%);
+    clip-path: polygon(35% 0, 45% 0, 85% 100%, 65% 100%);
+    -webkit-animation: wave 2000ms -7400ms ease-in-out infinite alternate;
+    animation: wave 2000ms -7400ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(15) {
+    -webkit-clip-path: polygon(40% 0, 50% 0, 90% 100%, 70% 100%);
+    clip-path: polygon(40% 0, 50% 0, 90% 100%, 70% 100%);
+    -webkit-animation: wave 2000ms -7200ms ease-in-out infinite alternate;
+    animation: wave 2000ms -7200ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(16) {
+    -webkit-clip-path: polygon(45% 0, 55% 0, 95% 100%, 75% 100%);
+    clip-path: polygon(45% 0, 55% 0, 95% 100%, 75% 100%);
+    -webkit-animation: wave 2000ms -7000ms ease-in-out infinite alternate;
+    animation: wave 2000ms -7000ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(17) {
+    -webkit-clip-path: polygon(50% 0, 60% 0, 100% 100%, 80% 100%);
+    clip-path: polygon(50% 0, 60% 0, 100% 100%, 80% 100%);
+    -webkit-animation: wave 2000ms -6800ms ease-in-out infinite alternate;
+    animation: wave 2000ms -6800ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(18) {
+    -webkit-clip-path: polygon(55% 0, 65% 0, 105% 100%, 85% 100%);
+    clip-path: polygon(55% 0, 65% 0, 105% 100%, 85% 100%);
+    -webkit-animation: wave 2000ms -6600ms ease-in-out infinite alternate;
+    animation: wave 2000ms -6600ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(19) {
+    -webkit-clip-path: polygon(60% 0, 70% 0, 110% 100%, 90% 100%);
+    clip-path: polygon(60% 0, 70% 0, 110% 100%, 90% 100%);
+    -webkit-animation: wave 2000ms -6400ms ease-in-out infinite alternate;
+    animation: wave 2000ms -6400ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(20) {
+    -webkit-clip-path: polygon(65% 0, 75% 0, 115% 100%, 95% 100%);
+    clip-path: polygon(65% 0, 75% 0, 115% 100%, 95% 100%);
+    -webkit-animation: wave 2000ms -6200ms ease-in-out infinite alternate;
+    animation: wave 2000ms -6200ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(21) {
+    -webkit-clip-path: polygon(70% 0, 80% 0, 120% 100%, 100% 100%);
+    clip-path: polygon(70% 0, 80% 0, 120% 100%, 100% 100%);
+    -webkit-animation: wave 2000ms -6000ms ease-in-out infinite alternate;
+    animation: wave 2000ms -6000ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(22) {
+    -webkit-clip-path: polygon(75% 0, 85% 0, 125% 100%, 105% 100%);
+    clip-path: polygon(75% 0, 85% 0, 125% 100%, 105% 100%);
+    -webkit-animation: wave 2000ms -5800ms ease-in-out infinite alternate;
+    animation: wave 2000ms -5800ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(23) {
+    -webkit-clip-path: polygon(80% 0, 90% 0, 130% 100%, 110% 100%);
+    clip-path: polygon(80% 0, 90% 0, 130% 100%, 110% 100%);
+    -webkit-animation: wave 2000ms -5600ms ease-in-out infinite alternate;
+    animation: wave 2000ms -5600ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(24) {
+    -webkit-clip-path: polygon(85% 0, 95% 0, 135% 100%, 115% 100%);
+    clip-path: polygon(85% 0, 95% 0, 135% 100%, 115% 100%);
+    -webkit-animation: wave 2000ms -5400ms ease-in-out infinite alternate;
+    animation: wave 2000ms -5400ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(25) {
+    -webkit-clip-path: polygon(90% 0, 100% 0, 140% 100%, 120% 100%);
+    clip-path: polygon(90% 0, 100% 0, 140% 100%, 120% 100%);
+    -webkit-animation: wave 2000ms -5200ms ease-in-out infinite alternate;
+    animation: wave 2000ms -5200ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(26) {
+    -webkit-clip-path: polygon(95% 0, 105% 0, 145% 100%, 125% 100%);
+    clip-path: polygon(95% 0, 105% 0, 145% 100%, 125% 100%);
+    -webkit-animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+    animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes wave {
+    0% {
+        transform: translate(-50%, -50%) scale(0.9) rotateX(20deg) rotateY(20deg) rotateZ(0deg);
+        color: #1c3f91;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        color: #32e6ff;
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: translate(-50%, -50%) scale(0.9) rotateX(20deg) rotateY(20deg) rotateZ(0deg);
+        color: #001e64;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        color: #32e6ff;
+    }
+}
+</style>
